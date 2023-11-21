@@ -1,0 +1,271 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: Arial;
+}
+
+.hea{
+    background: linear-gradient(
+        to left, rgb(253, 2, 253), orange
+    );
+    color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;  
+}
+
+.topnav a {
+    cursor: pointer; 
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-left: 1px solid white;
+}
+
+#lastHead{
+    border-right: 1px solid white;
+}
+
+.topnav a:hover {
+    background: linear-gradient(
+        to left, rgb(255, 238, 0), rgb(140, 255, 0)
+    );
+    color: black;
+}
+
+.headLast{
+    padding: 8px 5px;
+}
+
+.headLast .btnLogin-popup{
+    width: 100px;
+    height: 20px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.headLast .btnLogin-popup:hover {
+    background: linear-gradient(
+        to left, rgb(255, 238, 0), rgb(140, 255, 0)
+    );
+    color: black;
+}
+
+.secondDiv{
+    left: 0;
+    width: 100%;
+    height: 41px;
+    padding-left: 10px;
+    padding-right: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.secondDiv h2{
+    margin: 0;
+}
+
+.logo{
+    color: black;
+    user-select: none;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: black;
+    text-decoration: none;
+    margin-left: 40px;
+    cursor: pointer; 
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-left: 1px solid rgb(255, 255, 255);
+}
+
+#buyNow{
+    background-color: brown;
+}
+
+#searchBt{
+    background-color: black;
+    color: #fff;
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    width: 100%;
+    height:4px;
+    background: linear-gradient(
+        to left, rgb(253, 2, 253), orange
+    );
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.thirdImage{
+    background-image: url('img/thirdImage.jpeg');
+    background-repeat: no-repeat;
+    height: 470px;
+    background-size: cover;
+    display: flex;
+    margin: 0%;
+}
+
+.con{
+    margin-left: 25%;
+    margin-top: 10%;
+    margin-bottom: 17%;
+    border-left: 5px solid rgb(229, 84, 84);
+    border-radius: 5px;
+}
+
+.con div{
+    margin-left: 10px;
+}
+
+.thirdImage button:hover{
+    background: linear-gradient(
+        to left, rgb(255, 238, 0), rgb(140, 255, 0)
+    );
+    color: black;
+}
+
+.fourthDi {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(
+        to left, rgb(253, 2, 253), orange
+    );
+    height: 470px;
+}
+
+.fourthDi div {
+    width: 100%;
+    padding: 5px;
+    margin-left: 7%;
+}
+
+.fourthDi button{
+    background: transparent;
+    margin-top: 10%;
+    float: inherit;
+
+}
+
+.fourthDi button:hover{
+    background: linear-gradient(
+        to left, rgb(255, 238, 0), rgb(140, 255, 0)
+    ); 
+}
+
+.fifthDiv{
+    background-image: url('img/world.jpg');
+    background-repeat: no-repeat;
+    height: 470px;
+    background-size: cover;
+    margin-left: 4%;
+    position: relative;
+}
+
+.fifthDiv p{
+    font-size: 20px;
+    margin: 1%;
+}
+
+.fifthDiv img{
+    top: 1%;
+    right: 5%;
+    width: 29%;
+    position: absolute;
+    height: fit-content;
+}
+
+.fifthDiv button:hover{
+    background: linear-gradient(
+        to left, rgb(255, 238, 0), rgb(140, 255, 0)
+    );
+    color: black;
+}
+
+.sixthDiv{
+    background-image: url('img/world.jpg');
+    background-repeat: no-repeat;
+    height: 470px;
+    background-size: cover;
+    margin: 4%;
+}
+
+.sixthDiv div{
+    display: flex;
+}
+
+.polaroid {
+    width: 40%;
+    height: 40%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    margin-left: 10px;
+    position: relative;
+}
+  
+.container {
+    padding-left: 20%;
+    padding-right: 10%;
+    padding-top: 4%;
+    position: absolute;
+    bottom: -5%;
+    right: -4px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    height: 17%;
+    font-size: 10px;
+    background: linear-gradient(
+        to left, rgb(253, 2, 253), orange
+    );
+}
+
+h1{
+    text-decoration: underline red solid 5px;
+}
+
+button{
+    background: linear-gradient(
+        to left, rgb(253, 2, 253), orange
+    );
+    border-radius: 10px;
+}
